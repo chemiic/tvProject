@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DM_Sans.woff2') format('woff2'),
+       url('/fonts/DM_Sans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #F5F5F5;
+  --font-sans: 'DM Sans', Helvetica, Arial, sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #F5F5F5;
+  }
+}
+
+body {
+  background: var(--background);
+  font-family: var(--font-sans);
+  color: var(--foreground);
+}
