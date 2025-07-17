@@ -11,7 +11,7 @@
 :root {
   --background: #ffffff;
   --foreground: #F5F5F5;
-  --font-sans: 'DM Sans', Helvetica, Arial, sans-serif;
+  --font-sans: 'DM Sans',sans-serif;
 }
 
 @theme inline {
@@ -32,4 +32,19 @@ body {
   background: var(--background);
   font-family: var(--font-sans);
   color: var(--foreground);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.4);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
 }

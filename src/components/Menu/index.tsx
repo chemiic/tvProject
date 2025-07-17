@@ -56,7 +56,7 @@ export const Menu = ({ isVertical = false }: { isVertical?: boolean }) => {
                     <a
                         href="#"
                     >
-                        <InstIcon width={isVertical ? 60 : 40} height={isVertical ? 60 : 40}  />
+                        <InstIcon width={isVertical ? 60 : 40} height={isVertical ? 60 : 40} className={``} />
                     </a>
                     <a
                         href="#"
